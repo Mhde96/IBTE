@@ -22,10 +22,7 @@ This repository is dedicated to IBTE students, providing useful resources and co
    ```bash
    git checkout branch-name
    ```
-3. Stay up-to-date by pulling the latest changes from the main branch:  
-   ```bash
-   git pull origin main
-   ```
+
 
 ## 📖 Documentation
 - Refer to the branch-specific documentation for more details on how to use each feature.
