@@ -16,7 +16,7 @@ This repository is dedicated to IBTE students, providing useful resources and co
 ## 🛠 How to Use
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-repo/ibte-student-repository.git
+   git clone https://github.com/Mhde96/IBTE.git
    ```
 2. Switch to the desired branch:  
    ```bash
