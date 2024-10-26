@@ -1,15 +1,27 @@
- <!-- HTML FILE -->
+<!-- HTML FILE -->
 <!DOCTYPE html>
 
 <head>
   <title>Mohamd Almahdi</title>
 
   <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 
 <body id="container-page">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  
+
   <h1 class="title">One Peice</h1>
   <img
     src="https://cdn.oneesports.gg/cdn-data/2023/12/Anime_OnePiece_EastBlueSaga_Wallpaper_Luffy_Nami_Zoro_Sanji_Usopp.jpg"
@@ -61,43 +73,5 @@
     </div>
   </div>
 
-  <form class="form-container">
-    <h1>Ask To Follow</h1>
-    <fieldset>
-      <legend>Personal Information</legend>
-
-      <!-- Name Field -->
-      <label>Name:</label>
-      <input type="text" required />
-      <br />
-
-      <!-- Email Field -->
-      <label>Email:</label>
-      <input type="email" required />
-      <br />
-    </fieldset>
-    <br />
-    <!-- Feedback Section -->
-    <fieldset>
-      <legend>Feedback</legend>
-
-      <!-- Rating Field -->
-      <label>Rate the class:</label>
-      <select required>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <br />
-
-      <!-- Comments Field -->
-      <label for="comments">Comments:</label><br />
-      <textarea rows="4" cols="50"></textarea><br />
-    </fieldset>
-
-    <!-- Submit Button -->
-    <input type="submit" value="Submit Feedback" />
-  </form>
+ 
 </body>
