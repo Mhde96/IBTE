@@ -1,0 +1,38 @@
+<!-- DOM Attributes
+Objective: Show students how to get and set attributes of DOM elements.
+Exercise: Create an HTML page with an image and a button. When the button is clicked, change the
+src attribute of the image to another image URL. -->
+
+<!DOCTYPE html>
+<!-- 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Attributes Example</title>
+  </head> 
+-->
+<body>
+  <!-- Step 1: Create an image with a source (src) attribute -->
+  <img
+    id="myImage"
+    src="https://via.placeholder.com/150"
+    alt="Placeholder Image"
+  />
+
+  <!-- Step 2: Create a button to change the image source -->
+  <button id="changeImageButton">Change Image</button>
+
+  <script>
+    // Step 3: Define the function to change the image source
+    function changeImage() {
+      // Set the new image URL
+      document.getElementById("myImage").src =
+        "https://via.placeholder.com/200";
+    }
+
+    // Step 4: Add an event listener to the button
+    document
+      .getElementById("changeImageButton")
+      .addEventListener("click", changeImage);
+  </script>
+</body>

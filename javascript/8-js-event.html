@@ -1,0 +1,38 @@
+<!--
+Objective: Introduce students to JavaScript event listeners by implementing a simple form validation.
+Exercise: Create a form with a text input for an email address and a submit button. Use JavaScript
+to add an event listener to the form's submit event that checks if the email input is empty. If it is,
+prevent the form from being submitted and alert the user. 
+-->
+<!DOCTYPE html>
+<!-- <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Events Example</title>
+  </head> -->
+<body>
+  <!-- Step 1: Create a form with a text input for email and a submit button -->
+  <form id="myForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    // Step 2: Define the function to validate the email input
+    function validateForm(event) {
+      var emailInput = document.getElementById("email").value;
+
+      // Step 3: Check if the email input is empty
+      if (emailInput === "") {
+        // Prevent form submission
+        event.preventDefault();
+        // Alert the user
+        alert("Please enter an email address.");
+      }
+    }
+
+    // Step 4: Add an event listener to the form's submit event
+    document.getElementById("myForm").addEventListener("submit", validateForm);
+  </script>
+</body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Elements Example</title>
+</head> -->
+
+<body>
+  <!-- Step 1: Create a <ul> list -->
+  <ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <!-- Step 2: Create a button that will add new items to the list -->
+  <button id="addButton">Add Item</button>
+
+  <script>
+    // Step 3: Define the function to add a new <li> element
+    function addItem() {
+      // Create a new <li> element
+      var newItem = document.createElement("li");
+      // Set the text content for the new <li> element
+      newItem.textContent = "New Item";
+
+      // Append the new <li> to the <ul> list
+      document.getElementById("myList").appendChild(newItem);
+    }
+
+    // Step 4: Add an event listener to the button
+    document.getElementById("addButton").addEventListener("click", addItem);
+  </script>
+</body>

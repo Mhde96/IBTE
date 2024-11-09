@@ -1,0 +1,33 @@
+<!-- 
+DOM Syntax and Method
+Objective: Introduce students to basic DOM manipulation by changing the text of an HTML element.
+Exercise: Create a simple HTML page with a <p> element that has an id of "example". Write a
+JavaScript function that changes the text content of the <p> element when a button is clicked.
+ -->
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Manipulation Example</title>
+</head>
+<body>
+  <!-- Step 1: Create a <p> element with an id of "example" -->
+  <p id="example">This is the original text.</p>
+
+  <!-- Step 2: Create a button to trigger the text change -->
+  <button id="changeTextButton">Change Text</button>
+
+  <script>
+    // Step 3: Define the function to change the text content
+    function changeText() {
+      document.getElementById("example").textContent =
+        "The text has been changed!";
+    }
+
+    // Step 4: Add an event listener to the button
+    document
+      .getElementById("changeTextButton")
+      .addEventListener("click", changeText);
+  </script>
+</body>
