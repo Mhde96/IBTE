@@ -19,10 +19,13 @@ JavaScript function that changes the text content of the <p> element when a butt
   <button id="changeTextButton">Change Text</button>
 
   <script>
+
+    let counter = 1 
     // Step 3: Define the function to change the text content
     function changeText() {
+      counter++
       document.getElementById("example").textContent =
-        "The text has been changed!";
+        "The text has been changed!" + counter;
     }
 
     // Step 4: Add an event listener to the button

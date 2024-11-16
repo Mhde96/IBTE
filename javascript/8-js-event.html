@@ -21,15 +21,20 @@ prevent the form from being submitted and alert the user.
   <script>
     // Step 2: Define the function to validate the email input
     function validateForm(event) {
+      console.log({ event });
       var emailInput = document.getElementById("email").value;
 
+      console.log({ event });
+      event.preventDefault();
+
       // Step 3: Check if the email input is empty
-      if (emailInput === "") {
-        // Prevent form submission
-        event.preventDefault();
-        // Alert the user
-        alert("Please enter an email address.");
-      }
+      // if (emailInput === "") {
+      //   // Prevent form submission
+
+      //   event.preventDefault();
+      //   // Alert the user
+      //   alert("Please enter an email address.");
+      // }
     }
 
     // Step 4: Add an event listener to the form's submit event
