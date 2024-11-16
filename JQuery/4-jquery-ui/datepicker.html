@@ -1,0 +1,58 @@
+<!--
+Explanation:
+ * Including Libraries:
+ * jQuery: Loaded from a CDN.
+ * jQuery UI: Includes both the CSS and JavaScript files from the jQuery UI CDN.
+Input Field:
+ * An input field with the ID datepicker is created to attach the Datepicker widget.
+Datepicker Initialization:
+ * The $("#datepicker").datepicker(); line attaches the Datepicker widget to the input field.
+Expected Outcome:
+ * When the user clicks on the input field, a calendar widget will pop up, allowing them to select a date.
+   This exercise introduces students to using jQuery UI widgets to enhance the user interface, providing an experience beyond basic HTML elements. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery UI Datepicker Exercise</title>
+    <!-- Include jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery UI Library -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .datepicker-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>jQuery UI Datepicker Exercise</h2>
+
+    <!-- Input field for Datepicker -->
+    <div class="datepicker-container">
+      <label for="datepicker">Select a Date:</label>
+      <input type="text" id="datepicker" placeholder="Click to select a date" />
+    </div>
+
+    <!-- jQuery UI Script -->
+    <script>
+      $(document).ready(function () {
+        // Attach Datepicker to input field
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </body>
+</html>
+
+

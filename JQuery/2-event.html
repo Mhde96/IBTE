@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Events Exercise</title>
+    <!-- Include jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #hoverDiv {
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 100px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>jQuery Mouse Events Exercise</h2>
+
+    <!-- Button to trigger alert -->
+    <button id="alertButton">Click Me!</button>
+
+    <!-- Div element to change color on hover -->
+    <div id="hoverDiv">Hover over me</div>
+
+    <!-- jQuery Script -->
+    <script>
+      $(document).ready(function () {
+        // Show alert when button is clicked
+        $("#alertButton").click(function () {
+          alert("Button clicked!");
+        });
+
+        // Change div background color on hover
+        $("#hoverDiv").hover(
+          function () {
+            // Mouse enter
+            $(this).css("background-color", "lightblue");
+          },
+          function () {
+            // Mouse leave
+            $(this).css("background-color", "lightgray");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

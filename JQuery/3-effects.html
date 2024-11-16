@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Effects Exercise</title>
+    <!-- Include jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .image-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #ccc;
+      }
+      button {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>jQuery Effects Exercise</h2>
+
+    <!-- Buttons for different effects -->
+    <button id="fadeOutButton">Fade Out</button>
+    <button id="slideUpButton">Slide Up</button>
+    <button id="showButton">Show</button>
+
+    <!-- Image container with sample images -->
+    <div class="image-container">
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Image 1"
+        class="effect-image"
+      />
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Image 2"
+        class="effect-image"
+      />
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Image 3"
+        class="effect-image"
+      />
+    </div>
+
+    <!-- jQuery Script -->
+    <script>
+      $(document).ready(function () {
+        // Fade out images when "Fade Out" button is clicked
+        $("#fadeOutButton").click(function () {
+          $(".effect-image").fadeOut();
+        });
+
+        // Slide up images when "Slide Up" button is clicked
+        $("#slideUpButton").click(function () {
+          $(".effect-image").slideUp();
+        });
+
+        // Show images when "Show" button is clicked
+        $("#showButton").click(function () {
+          $(".effect-image").show();
+        });
+      });
+    </script>
+  </body>
+</html>

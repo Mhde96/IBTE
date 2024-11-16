@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Exercise</title>
+    <!-- Include jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .class1 {
+        font-size: 18px;
+      }
+      .class2 {
+        font-size: 20px;
+      }
+      .class3 {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Change Paragraph Text Color and Hide with Button</h2>
+
+    <!-- Paragraphs with different classes -->
+    <p class="class1">This is the first paragraph.</p>
+    <p class="class2">This is the second paragraph.</p>
+    <p class="class3">This is the third paragraph.</p>
+
+    <!-- Button to hide paragraphs -->
+    <button id="hideButton">Hide All Paragraphs</button>
+    <button id="changeColorButton">Change All Paragraphs color</button>
+
+    <!-- jQuery Script -->
+    <script>
+      $(document).ready(function () {
+        // Change text color of all paragraphs
+        $("p").css("color", "blue");
+
+        // Hide paragraphs when button is clicked
+        $("#hideButton").click(function () {
+          $("p").hide();
+        });
+
+        $("#changeColorButton").click(function () {
+          $("p").css("color", "red");
+        });
+
+        
+      });
+    </script>
+  </body>
+</html>
