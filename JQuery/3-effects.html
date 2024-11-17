@@ -27,6 +27,7 @@
 
     <!-- Buttons for different effects -->
     <button id="fadeOutButton">Fade Out</button>
+    <button id="fadeInButton">Fade in</button>
     <button id="slideUpButton">Slide Up</button>
     <button id="showButton">Show</button>
 
@@ -55,6 +56,9 @@
         // Fade out images when "Fade Out" button is clicked
         $("#fadeOutButton").click(function () {
           $(".effect-image").fadeOut();
+        });
+        $("#fadeInButton").click(function () {
+          $(".effect-image").fadeIn();
         });
 
         // Slide up images when "Slide Up" button is clicked
