@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+}
+
+.footer {
+  color: white;
+  transition: background-color 1s ease-in-out; /* Smooth animation for color changes */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #6c757d;
+  color: white;
+  padding: 15px;
+}
+
+.sidebar ul {
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Features Section */
+.feature-box {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.feature-1 {
+  background-color: #ffc107;
+}
+
+.feature-2 {
+  background-color: #17a2b8;
+  color: white;
+}
+
+/* Cards Section */
+.card-box {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card-1 {
+  background-color: #28a745;
+  color: white;
+}
+
+.card-2 {
+  background-color: #dc3545;
+  color: white;
+}
+
+.card-3 {
+  background-color: #343a40;
+  color: white;
+}

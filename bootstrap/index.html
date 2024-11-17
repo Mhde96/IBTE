@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Bootstrap Layout with jQuery</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container bg-light p-4">
+      <!-- Header -->
+      <div class="row mb-3">
+        <div class="col-12 text-center p-3 header">
+          <h1>Complex Bootstrap Layout</h1>
+          <p>A sample layout with a header, sidebar, and footer</p>
+        </div>
+      </div>
+
+      <!-- Control Buttons -->
+      <div class="row mb-3">
+        <div class="col-12 text-center">
+          <button id="toggleSidebar" class="btn btn-secondary m-2">
+            Toggle Sidebar
+          </button>
+          <button id="toggleFeatures" class="btn btn-warning m-2">
+            Toggle Features
+          </button>
+          <button id="showAll" class="btn btn-success m-2">Show All</button>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="row">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="col-md-3 col-lg-2 sidebar">
+          <h4>Sidebar Menu</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="col-md-9 col-lg-10">
+          <!-- Features Section -->
+          <div id="features" class="row mb-3">
+            <div class="col-md-6">
+              <div class="feature-box feature-1">
+                <h4>Feature 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-box feature-2">
+                <h4>Feature 2</h4>
+                <p>
+                  Suspendisse tincidunt magna vel erat fringilla, et suscipit
+                  purus malesuada.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards Section -->
+          <div id="cards" class="row">
+            <div class="col-md-4">
+              <div class="card-box card-1">
+                <h4>Card 1</h4>
+                <p>Curabitur dictum turpis vel lacus vehicula tristique.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-box card-2">
+                <h4>Card 2</h4>
+                <p>Quisque vel orci a eros consequat ullamcorper.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-box card-3">
+                <h4>Card 3</h4>
+                <p>
+                  Morbi bibendum eros nec est blandit, non venenatis metus
+                  fermentum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <!-- <div class="row mt-3">
+        <div class="col-12  p-3 footer d-flex flex-column align-start">
+          <h1>1 - Add a Bootstrap Form with Validation.</h1>
+          <h1>2 - Add a Bootstrap Table.</h1>
+          <h1>3 - Add Bootstrap Dropdowns.</h1>
+          <h1>4 - Add a Bootstrap Modal.</h1>
+          <h1>5 - Add Bootstrap Toasts.</h1>
+          <h1>6 - Add a Bootstrap Card Component.</h1>
+          <h1>7 - Add a Bootstrap Button.</h1>
+          <h1>8 - Then create a Button and a Card with custom CSS styles.</h1>
+          <h1>9 - Then apply a custom jQuery effect to the Button for interaction with the Card.</h1>
+          <h1>10 - I'm happy to see what you've accomplished! ^_^</h1>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
