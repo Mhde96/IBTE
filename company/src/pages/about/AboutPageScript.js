@@ -28,7 +28,7 @@ function appendElements() {
     } else {
         setTimeout(() => {
             appendElements()
-        }, 1)
+        }, 100)
     }
 }
 
