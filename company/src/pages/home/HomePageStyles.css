@@ -1,0 +1,28 @@
+.homepage {
+}
+
+.homepage img {
+  object-fit: cover;
+  max-height: 360px;
+}
+
+.image-card {
+    height: 280px;
+    
+}
+
+.desciption{
+  background: #F9FAFB;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
